@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\model",
-    "\\src"
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\questionnaire",
+    "\\src\\assets",
+    "\\src\\environments"
   ],
-  "SelectedNode": "\\model\\questionnaireOptions.ts",
+  "SelectedNode": "\\src\\app\\app-routing.module.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -1,43 +1,15 @@
 <h2>Resource Questionnaire Response</h2>
-<form [formGroup]="filterForm">
-    <div *ngFor="let option of questionnaire" [value]="option">
-        {{option.questionnaire}}
-    </div>
-
-    <br />
-
-</form>
-<!--<form [formGroup]="filterForm" class="filter-form">
-    <ng-template #recursiveList let-filterFields let-fromGroup="fromGroup">
-        <ng-container *ngFor="let item of filterFields">
-            <label [attr.for]="item.text">{{item.text}}</label>
-            <ng-container *ngIf="item.group; else default;">
-                <p>{{item.title}}</p>
-                <div class="row pb-4" [formGroupName]="item.id">
-                    <ng-container *ngTemplateOutlet="recursiveList; context:{ $implicit: item.group, fromGroup: {name: item.id} }"></ng-container>
-                </div>
-            </ng-container>
-            <ng-template #default>
-                <div class="col-md-3">
-                    <div class="form-group">
-
-     <input [type]="item.item.type" [name]="item.id" />
-
-                        <label [attr.for]="item.text">{{item.status}}</label>
-                    </div>
 
 
-                    <div class="form-group" [formGroupName]="fromGroup.name">
-                        <input [type]="item.type" [formControlName]="item.id" [placeholder]="item.title" [name]="item.id" />
-                    </div>
+<a href="#" routerLink="/home" class="linkHome">Home</a>
+
+<div class="submenu">
+    <span class="d-block text-right small">{{contentGeneral.subjectType}}</span>
+    <span class="d-block text-right small">{{contentGeneral.item.linkId}}</span>
+    <span class="d-block text-right small">{{contentGeneral.item.text}}</span>
+    <span class="d-block text-right small">{{contentGeneral.item.item.linkId}}</span>
+</div>
 
 
-                </div>
-            </ng-template>
-        </ng-container>
-    </ng-template>
-    <ng-container *ngTemplateOutlet="recursiveList; context:{ $implicit: filterFields }"></ng-container>
-</form>-->
-<!--<a routerLink="/home">home</a>-->
 <router-outlet></router-outlet>
 
